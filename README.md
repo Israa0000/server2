@@ -13,7 +13,7 @@ Para instalar dependencias en un proyecto de `nodejs` y `npm` hacemos:
 
 ```bash
 npm install express
-npm i express 
+npm i express # version corta
 ```
 
 Es buena practica y recomendado, meter `node_modules` en nuestro 
