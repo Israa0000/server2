@@ -18,3 +18,5 @@ npm i express # version corta
 
 Es buena practica y recomendado, meter `node_modules` en nuestro 
 `.gitignore`
+
+Para arrancar el servidor lanzo `node server.js`
