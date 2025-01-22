@@ -20,3 +20,15 @@ Es buena practica y recomendado, meter `node_modules` en nuestro
 `.gitignore`
 
 Para arrancar el servidor lanzo `node server.js`
+
+## Endpoint básico
+
+Este endpoint me devuelve un hola mundo tanto en el servidor como al cliente
+```javascript
+function holaMundo(request, response){
+    console.log('Hola mundo') // esto se ejecuta en el servidor
+    response.send('Hola mundo') // esto se ejecuta 
+}
+
+app.get("/", holaMundo)
+```
