@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    aqui se veran los usuarios
+    <table>
+        <thead>
+        <tr>
+            <td>Nombre</td>
+            <td>Email</td>
+            <td>Password</td>
+            <td>Status</td>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Pepito</td>
+                <td>Superpassword</td>
+                <td>pepito@gmail</td>
+                <td>activo</td>
+            </tr>
+            <tr>
+                <td> Pepito</td>
+                <td>Superpassword</td>
+                <td>pepito@gmail</td>
+                <td>activo</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+    <script>
+        fetch("/users")
+        .then(data => data.json())
+        .then(usuarios => {
+            console.log(usuarios)
+        })
+
+    </script>
+</html>

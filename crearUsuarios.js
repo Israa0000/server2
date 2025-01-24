@@ -78,3 +78,14 @@ app.get("/", (req, res) => {
 app.listen(3000, () => {
     console.log('El servidor está funcionando en el puerto 3000');
 });
+
+
+app.use(express.static('public'));
+app.get ('/users', (req,res) => {
+    res.json(users)
+})
+
+app.get('/users/:id',(req, res) => {
+    const id = req.params.id;
+    res.json(users[id])
+})
